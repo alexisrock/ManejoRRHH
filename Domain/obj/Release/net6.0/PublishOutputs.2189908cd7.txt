@@ -1,0 +1,3 @@
+D:\proyectos\Compilados\Domain.dll
+D:\proyectos\Compilados\Domain.deps.json
+D:\proyectos\Compilados\Domain.pdb
