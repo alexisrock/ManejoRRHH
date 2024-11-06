@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9ikHjY1XLO9lulNmprWf+MW98P4ena6Fm+2piT//AdLzzCn9RZEc/YUQDjc4k+5zZWOpJg8X2UlP8kGLjyCrBw==",
+  "dgSpecHash": "2ypgH3E+LVnC8WsKLjkPFnxnh2bZ1PGU4KbGGzNF7z+4imJ9IvpKqLXUVCI7AhKoC/qWoL6bMKzVbcO843yeRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\ManejoRRHH\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\ManejoRRHH\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

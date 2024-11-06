@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ixG4+UoZZE67Nd/S1tM0l0J/Y1RrU7WQ5yKbAzQm1yCeXLZxwABYSdXX6e71sKTE8mmSEls6m9BFoVpZu3g/8g==",
+  "dgSpecHash": "hRmiJnxcuwdv+WRVez4Af03dorW/gIF+R8dlXqswH8HrdbksS/3JfJAHT9DsAx2cxgR8uiZhz4zAEXL+WVWIjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\ManejoRRHH\\ApiManejoRRHH\\ApiManejoRRHH.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\ManejoRRHH\\ApiManejoRRHH\\ApiManejoRRHH.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

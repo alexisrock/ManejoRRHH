@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/RtDVwOc4bPND638TRo48J3gG/VWMHrsXnOZYgx1pfRf8oxfGfI49nGjgTwUx9MhKsJJyBCgvCNkLUaBs/O7vw==",
+  "dgSpecHash": "MH/M+J1u55UKZ2J00LV3sYYm4VWlLbTkK6Lh7TH+C4btqdbE+TFb+eZBHas8xV68DgIX8H40j+N4BXT3C/U1Gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\ManejoRRHH\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\ManejoRRHH\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
