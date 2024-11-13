@@ -1,5 +1,4 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS base
-USER app
 WORKDIR /App
 EXPOSE 8081
 
@@ -13,7 +12,7 @@ RUN dotnet build "ApiManejoRRHH/ApiManejoRRHH.csproj" -c $BUILD_CONFIGURATION -o
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./ApiManejoRRHH.csproj"  -c $BUILD_CONFIGURATION Release -o /App/publish /p:UseAppHost=false
+RUN dotnet publish "ApiManejoRRHH/ApiManejoRRHH.csproj"  -c $BUILD_CONFIGURATION -o /App/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /App
