@@ -8,12 +8,12 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src 
 COPY . ./
 RUN dotnet restore
-RUN dotnet build "ApiManejoRRHH/ApiManejoRRHH.csproj" -c BUILD_CONFIGURATION -o /App/build
+RUN dotnet build "ApiManejoRRHH/ApiManejoRRHH.csproj" -c $BUILD_CONFIGURATION -o /App/build
 
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish  -c BUILD_CONFIGURATION Release -o /App/publish /p:UseAppHost=false
+RUN dotnet publish "./ApiManejoRRHH.csproj"  -c $BUILD_CONFIGURATION Release -o /App/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /App
