@@ -13,7 +13,7 @@ RUN dotnet build "ApiManejoRRHH/ApiManejoRRHH.csproj" -c BUILD_CONFIGURATION -o 
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "ApiManejoRRHH/ApiManejoRRHH.csproj" -c BUILD_CONFIGURATION Release -o /App/publish /p:UseAppHost=false
+RUN dotnet publish  -c BUILD_CONFIGURATION Release -o /App/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /App
