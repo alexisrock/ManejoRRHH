@@ -1,15 +1,21 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
-EXPOSE 80
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS base
+USER app
 WORKDIR /App
+EXPOSE 8081
 
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS  build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src 
 COPY . ./
-# Restore as distinct layers
 RUN dotnet restore
-# Build and publish a release
-RUN dotnet publish -c Release -o out
+RUN dotnet build "ApiManejoRRHH/ApiManejoRRHH.csproj" -c BUILD_CONFIGURATION -o /App/build
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
+
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "ApiManejoRRHH/ApiManejoRRHH.csproj" -c BUILD_CONFIGURATION Release -o /App/publish /p:UseAppHost=false
+
+FROM base AS final
 WORKDIR /App
-COPY --from=build-env /App/out .
-ENV DOTNET_EnableDiagnostics=0
+COPY --from=publish /App/publish . 
 ENTRYPOINT ["dotnet", "ApiManejoRRHH.dll"]
